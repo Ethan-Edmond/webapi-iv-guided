@@ -24,7 +24,7 @@ server.get('/', (req, res) => {
 });
 
 server.post('/', (req, res) => {
-  Shoutouts.add(req.body.shout)
+  Shoutouts.add(req.body)
   .then(shoutout => {
     res.status(201).json(shoutout);
   })
