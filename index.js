@@ -6,6 +6,6 @@ const port = process.env.PORT || 5000;
 
 console.log(process.env.PORT);
 
-server.listen(4000, () => {
-  console.log('\n*** Server Running on http://localhost:4000 ***\n');
+server.listen(port, () => {
+  console.log(`\n*** Server Running on http://localhost:${port} ***\n`);
 });
